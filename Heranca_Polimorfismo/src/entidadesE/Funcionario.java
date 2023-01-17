@@ -45,8 +45,7 @@ public class Funcionario {
 	}
 
 	public double Pagamento() {
-		double pag = valorPorHora * horas;
-		return pag;
+		return valorPorHora * horas;
 	}
 
 	@Override
