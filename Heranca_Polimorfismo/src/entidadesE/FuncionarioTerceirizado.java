@@ -23,7 +23,6 @@ public class FuncionarioTerceirizado extends Funcionario {
 
 	@Override
 	public double Pagamento() {
-		double pag = (valorPorHora * horas) + (valorAdicional * 1.10);
-		return pag;
+		return (valorPorHora * horas) + (valorAdicional * 1.10);
 	}
 }
