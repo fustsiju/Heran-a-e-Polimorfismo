@@ -25,4 +25,10 @@ public class Empresa extends Conta {
 			quantia += valor - 10; //Utilizando "quantia" da classe Conta após setar como protected.
 		}
 	}
+	
+	@Override
+	public void saque(double valor) {
+		super.saque(valor);
+		quantia -= 2.0;
+	}
 }
