@@ -36,8 +36,20 @@ public class Aplicacao {
 			conta5.atualizaSaldo(0);
 			System.out.println("Atualizado!");
 		}
-
+		
+		//Testes com Override
+		Conta conta6 = new Conta(1005, "João", 1000);
+		conta6.saque(200.0);
+		System.out.println(conta6.getQuantia());
+		
+		Conta conta7 = new Poupanca(1006, "Maria", 1000, 0.01);
+		conta7.saque(200);
+		System.out.println(conta7.getQuantia());
+		
+		Conta conta8 = new Empresa(1007, "Art", 1000, 500);
+		conta8.saque(200);
+		System.out.println(conta8.getQuantia());
+		
 		num.close();
-
 	}
 }
